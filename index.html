@@ -8,7 +8,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Personal Website for Chris Paika">
     <meta name="author" content="Christopher Paika">
-    <link rel="icon" href="../../favicon.ico">
     <title>Chris Paika</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,6 +17,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"></link>
+
+    <!-- favicon generated from https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
@@ -25,60 +32,72 @@
       <div class="container">
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li class="navitem active"><a href="#home">Home</a></li>
+            <li class="navitem"><a href="#projects">Projects</a></li>
+            <li class="navitem"><a href="#blog">Blog</a></li>
+            <li class="navitem"><a href="#resume">Resume</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     <div class="container">
 
-      <!-- Left side of the page -->
-      <div class="row">
-        <div class="col-md-5">
-          <img class="center-block" src="images/me.jpg"></img>
-          <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-              <a href="https://www.github.com/cpaika" target="_blank">
-                <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="col-md-2">
-              <a href="https://www.linkedin.com/in/christopher-paika-551a3864/" target="_blank">
-                <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="col-md-2">
-              <a href="https://www.instagram.com/chrispaika/" target="_blank">
-                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-              </a>
-            </div>
+      <div id="home" class="content">
+        <!-- Left side of the page -->
+        <div class="row">
+          <div class="col-md-5">
+            <img class="center-block" src="images/me.jpg"></img>
+            <div class="row">
               <div class="col-md-2">
-              <a href="mailto:paika.christopher@gmail.com" target="_blank">
-                <i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i>
-              </a>
+              </div>
+              <div class="col-md-2">
+                <a href="https://www.github.com/cpaika" target="_blank">
+                  <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-2">
+                <a href="https://www.linkedin.com/in/christopher-paika-551a3864/" target="_blank">
+                  <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-2">
+                <a href="https://www.instagram.com/chrispaika/" target="_blank">
+                  <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                </a>
+              </div>
+                <div class="col-md-2">
+                <a href="mailto:paika.christopher@gmail.com" target="_blank">
+                  <i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="col-md-2">
+              </div>
             </div>
-            <div class="col-md-2">
+          </div>
+
+          <!-- Right side of page -->
+          <div class="col-md-7">
+            <div class="jumbotron">
+              <h1>Get to know me</h1>
+              <p>
+                I'm a software developer currently working in the Boston area.  I'm full stack, concentrating on the backend and using devops principles to get features to customers as quickly as possible.
+              <p>
+
+                <p>In my spare time I try to get outside as much as possible! </p>
+              <p><a class="btn btn-primary btn-lg" href="mailto:paika.christopher@gmail.com" role="button">Get in touch</a></p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Right side of page -->
-        <div class="col-md-7">
-          <div class="jumbotron">
-            <h1>Get to know me</h1>
-            <p>
-              I'm a software developer currently working in the Boston area.  I'm full stack, concentrating on the backend and using devops principles to get features to customers as quickly as possible.
-            <p>
-
-              <p>In my spare time I try to get outside as much as possible! </p>
-            <p><a class="btn btn-primary btn-lg" href="mailto:paika.christopher@gmail.com" role="button">Get in touch</a></p>
-          </div>
-        </div>
+      <div id="projects" class="content" style="display: none;">
+        <p>Well this is embarrasing.  I guess I have to work on a personal project....</p>
+      </div>
+      <div id="blog" class="content" style="display: none;">
+        <p>I swear I'll write about something one day...</p>
+      </div>
+      <div id="resume" class="content" style="display: none;">
+        <p>Does anyone even read resumes?</p>
       </div>
     </div>
 
@@ -89,5 +108,6 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
