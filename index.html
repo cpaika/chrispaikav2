@@ -9,22 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>Navbar Template for Bootstrap</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
 
   <body>
-
-    <div class="container">
-
-      <!-- Static navbar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -36,14 +29,24 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="center-block" src="images/me.jpg"></img>
+        </div>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="row text-center">
-        <img src="images/me.jpg"></img>
+        <!-- Right side of page -->
+        <div class="col-md-7">
+          <div class="jumbotron">
+            <h1>Get to know me</h1>
+            <p>
+              I'm a software developer working in the Boston area, currently at Constant Contact.  I'm a full stack developer, with an interest in devops.
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Get in touch</a></p>
+          </div>
+        </div>
       </div>
-
-    </div> <!-- /container -->
-
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
